@@ -1,0 +1,47 @@
+.container {
+  margin: auto;
+  margin-top: 100px;
+  padding: 75px;
+  text-align: center;
+  width: 600px;
+  max-height: 600px;
+  background-color: rgba(255, 242, 217, 0.5);
+}
+
+body {
+  background-image: url(storm.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  text-align: center;
+  color: antiquewhite;
+}
+
+a {
+  color: orange;
+}
+
+h1 {
+  line-height: 28px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.specs {
+  text-align: left;
+}
+
+.container2 {
+  display: flex;
+
+  bottom: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 200;
+}
