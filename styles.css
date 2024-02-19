@@ -45,3 +45,7 @@ p {
   justify-content: space-between;
   min-height: 200;
 }
+
+.city {
+  text-align: left;
+}
