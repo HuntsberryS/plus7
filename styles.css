@@ -37,15 +37,67 @@ p {
 }
 
 .container2 {
-  display: flex;
-
-  bottom: 0;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  column-count: 4;
+  column-width: 50px;
+  column-gap: 20px;
   min-height: 200;
+  margin-top: 150px;
+  border-top: 1px solid white;
+  padding-top: 20px;
+}
+
+.deets {
+  text-align: left;
+  margin-top: 50px;
+  color: rgb(2, 11, 36);
 }
 
 .city {
-  text-align: left;
+  font-size: 20px;
+}
+
+#searchCity {
+  width: 500px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  color: rgb(2, 11, 36);
+}
+
+#searchButton {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: rgb(2, 11, 36);
+  color: white;
+}
+.tempDisplay {
+  text-align: right;
+  padding: none;
+}
+
+.search {
+  border-bottom: 1px solid white;
+  padding-bottom: 40px;
+}
+.deets {
+  display: flex;
+  justify-content: space-around;
+}
+
+#weatherIconTempandUnit {
+  display: flex;
+}
+
+.weatherNumericalValue {
+  font-size: 70px;
+  font-weight: bold;
+}
+.weatherUnit {
+  font-size: 28px;
+}
+.weatherIcon {
+  font-size: 42px;
+  margin-top: 22px;
+  margin-right: 10px;
 }

@@ -5,42 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyWeatherApp</title>
     <link rel="stylesheet" href="styles.css"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
   <div class="container">
-        <form id="search-form">
+    <div class="search">
+        <form id="searchForm">
             <input id="searchCity"
             type="search"
             placeholder="Enter a city.."
             required
             />
-            <input type="submit" value="Search"/>
+            <input id="searchButton" type="submit" value="Search"/>
         </form>
+        </div>
     
         <div class="deets">
-            <h1 class="city"> Gathering weather data... </h1>
+          <div>
+            <h1 class="displayCity">Enter a city to search for weather conditions.. </h1>
             <p class="specs">
-                stuff here 
+                <p>`${date}: ${currentTime}, ${currentWeatherConditions}`</br>
+                `Humidity: <span>${currentHumidity}</span>, Wind: <span>${currentWindConditions}</span>`</p>
             </p>
-        </div>
+            </div>
+            <div id="weatherIconTempandUnit"> 
+              <div class="weatherIcon">*</div>
+              <div class="weatherNumericalValue">24</div>
+              <div class="weatherUnit">°F</div>
+            </div>
+   </div>
     <div class="container2">
-  <div class="row">
-    <div class="col">
+  <div class="row1">
+    <div class="col1">
       1 of 2
     </div>
     <div class="col">
       2 of 2
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      1 of 3
+  <div class="row2">
+    <div class="col2">
+      1 of 2
     </div>
     <div class="col">
-      2 of 3
+      2 of 2
+    </div>
+    <div class="row3">
+    <div class="col3">
+      1 of 2
     </div>
     <div class="col">
-      3 of 3
+      2 of 2
+    </div>
+    <div class="row4">
+    <div class="col4">
+      1 of 2
+    </div>
+    <div class="col">
+      2 of 2
+    </div>
+  </div>
+  
     </div>
   </div>
 </div>

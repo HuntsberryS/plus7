@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://wdrr83.csb.app/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./index.js"></script><script src="./preview-protocol.js" async="" defer=""></script>
+    <script crossorigin="" type="text/javascript" src="./vendors~app~embed~sandbox-startup.1c90fe343.chunk.js"></script>
+    <script crossorigin="" type="text/javascript" src="./default~app~embed~sandbox~sandbox-startup.bd4a72b5c.chunk.js"></script>
+    <script crossorigin="" type="text/javascript" src="./sandbox-startup.2e8847231.js"></script><link href="https://codesandbox.io/static/js/babel.7.21.8.min.js" rel="prefetch" as="script">
+
+<script src="./browserfs.min.js" type="text/javascript"></script>
+
+<script>
+  window.process = BrowserFS.BFSRequire('process');
+  window.Buffer = BrowserFS.BFSRequire('buffer').Buffer;
+</script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./css2" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./axios.min.js"></script>
+
+    <title>My weather application</title>
+    <link rel="manifest" href="https://wdrr83.csb.app/manifest.json">
+  <script charset="utf-8" src="./0.681043136.chunk.js"></script><script charset="utf-8" src="./1.390d5cd6d.chunk.js"></script><script charset="utf-8" src="./2.77529c16f.chunk.js"></script><script charset="utf-8" src="./7.14bd680f6.chunk.js"></script><style id="/src/styles.css:-css" type="text/css">body {
+  background: #f9f7fe;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #885df1;
+}
+
+.weather-app {
+  background: white;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 30px;
+}
+
+.search-input {
+  background-color: #f9f7fe;
+  border: none;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  padding: 20px;
+  width: 75%;
+  border-radius: 6px;
+}
+
+.search-button {
+  margin-left: 5px;
+  font-size: 16px;
+  background-color: #885df1;
+  color: white;
+  border: none;
+  padding: 20px;
+  line-height: 1;
+  border-radius: 5px;
+}
+
+main {
+  padding: 30px 0;
+}
+
+.current-temperature {
+  font-size: 48px;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-city {
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0;
+}
+.current-details {
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.current-details strong {
+  color: #f65282;
+}
+
+.current-temperature-icon {
+  position: relative;
+  top: -8px;
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.current-temperature-value {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.current-temperature-unit {
+  font-size: 28px;
+  position: relative;
+  top: -38px;
+}
+
+footer {
+  border-top: 1px solid #f9f7fe;
+  text-align: center;
+  padding-top: 15px;
+
+  color: rgba(39, 33, 66, 0.4);
+}
+</style></head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input type="search" placeholder="Enter a city.." required="" class="search-input" id="search-input">
+          <input type="submit" value="Search" class="search-button">
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city">Paris</h1>
+            <p class="current-details">
+              <span id="current-date"></span>, moderate rain <br>
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">☀️</span><span class="current-temperature-value">24</span><span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://wdrr83.csb.app/#" target="_blank">Matt Delac</a> and is
+          <a href="https://wdrr83.csb.app/#" target="_blank"> on GitHub</a> and
+          <a href="https://wdrr83.csb.app/#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+  </body></html>
