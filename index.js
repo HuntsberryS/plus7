@@ -7,6 +7,16 @@ function updateWeatherInfo(response) {
   cityElement.innerHTML = response.data.city;
 
   currentTemp.innerHTML = tempDisplay;
+
+  let currentHumidity = document.querySelector("#humidity");
+  let humidity = Math.round(response.data.temperature.humidity);
+
+  currentHumidity.innerHTML = `The current Humidity level is ${humidity}`;
+
+  let currentWind = document.querySelector("#wind");
+  let wind = Math.round(response.data.wind.speed);
+
+  currentWind.innerHTML = `The current Wind Speed is ${wind}`;
 }
 
 function searchCity(city) {
