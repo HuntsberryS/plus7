@@ -11,12 +11,12 @@ function updateWeatherInfo(response) {
   let currentHumidity = document.querySelector("#humidity");
   let humidity = Math.round(response.data.temperature.humidity);
 
-  currentHumidity.innerHTML = `The current Humidity level is ${humidity}`;
+  currentHumidity.innerHTML = `The current Humidity level is ${humidity}%`;
 
   let currentWind = document.querySelector("#wind");
   let wind = Math.round(response.data.wind.speed);
 
-  currentWind.innerHTML = `The current Wind Speed is ${wind}`;
+  currentWind.innerHTML = `The current Wind Speed is ${wind}mph`;
 }
 
 function searchCity(city) {

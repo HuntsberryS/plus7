@@ -5,22 +5,17 @@
   text-align: center;
   width: 600px;
   max-height: 600px;
-  background-color: rgba(255, 242, 217, 0.5);
-}
-
-body {
-  background-image: url(storm.avif);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgba(112, 136, 87, 0.4);
 }
 
 footer {
   text-align: center;
-  color: antiquewhite;
+  color: black;
+  opacity: 0.8;
 }
 
 a {
-  color: orange;
+  color: rgb(56, 73, 38);
 }
 
 h1 {
@@ -42,14 +37,14 @@ p {
   column-gap: 20px;
   min-height: 200;
   margin-top: 150px;
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(56, 73, 38);
   padding-top: 20px;
 }
 
 .deets {
   text-align: left;
   margin-top: 50px;
-  color: rgb(2, 11, 36);
+  color: black;
 }
 
 .city {
@@ -61,15 +56,23 @@ p {
   border: none;
   border-radius: 20px;
   padding: 10px;
-  color: rgb(2, 11, 36);
+  background-color: whitesmoke;
+}
+#searchCity:focus {
+  outline: none;
+  background-color: whitesmoke;
+}
+
+.displayCity {
+  font-size: 46px;
 }
 
 #searchButton {
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
-  background-color: rgb(2, 11, 36);
-  color: white;
+  background-color: rgb(56, 73, 38);
+  color: whitesmoke;
 }
 .tempDisplay {
   text-align: right;
@@ -77,8 +80,9 @@ p {
 }
 
 .search {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid whitesmoke;
   padding-bottom: 40px;
+  width: auto;
 }
 .deets {
   display: flex;
@@ -100,4 +104,27 @@ p {
   font-size: 42px;
   margin-top: 22px;
   margin-right: 10px;
+}
+
+.weatherForcast {
+  font-size: 22px;
+  margin-top: 22px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: black;
+}
+#high {
+  font-weight: 700;
+  color: rgb(23, 39, 6);
+}
+#low {
+  opacity: 0.8;
+}
+
+.containerMini {
+  background-color: rgba(245, 245, 245, 0.6);
+  border-radius: 15px;
+  padding: 6px;
 }
