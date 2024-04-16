@@ -12,6 +12,7 @@ footer {
   text-align: center;
   color: black;
   opacity: 0.8;
+  margin-top: 75px;
 }
 
 a {
@@ -125,4 +126,8 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   color: black;
+}
+
+.symbols {
+  width: 50%;
 }
