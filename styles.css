@@ -106,15 +106,6 @@ p {
   margin-right: 10px;
 }
 
-.weatherForcast {
-  font-size: 22px;
-  margin-top: 22px;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  color: black;
-}
 #high {
   font-weight: 700;
   color: rgb(23, 39, 6);
@@ -127,4 +118,11 @@ p {
   background-color: rgba(245, 245, 245, 0.6);
   border-radius: 15px;
   padding: 6px;
+  font-size: 22px;
+  margin-top: 22px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: black;
 }

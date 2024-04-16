@@ -30,6 +30,27 @@ function displayInputCity(event) {
   let searchInput = document.querySelector("#searchCity");
   searchCity(searchInput.value);
 }
+function forecastLoop() {
+  let days = ["Mon", "Tues", "Wed", "Thurs", "Fri"];
+  let forecastPrediction = "";
+
+  days.forEach(function (day) {
+    forecastPrediction =
+      forecastPrediction +
+      `<div class="weatherForcast"> 
+          <div class="dayOfWeek"> ${day}</div>
+          
+            <span class="material-symbols-outlined">sunny</span>
+            
+            <div class="forcastTemp"> <span id= "high"> 52 </span> <span id="low">30</span> </div>
+        </div>`;
+  });
+
+  let forecastElement = document.querySelector(".containerMini");
+  forecastElement.innerHTML = forecastPrediction;
+}
 
 let searchFormElement = document.querySelector("#searchForm");
 searchFormElement.addEventListener("submit", displayInputCity);
+
+forecastLoop();
